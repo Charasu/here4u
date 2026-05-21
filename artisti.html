@@ -251,6 +251,13 @@ body,html{margin:0;padding:0;background-color:var(--bg-color);color:#fff;font-fa
 .c-right{width:25%;display:flex;justify-content:flex-end;align-items:center;text-align:right}
 .c-year{font-size:min(.9rem, 2vh);color:#555;font-weight:700;margin:0;transition:color .4s ease}
 .collab-row.active .c-year{color:#888}
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
 @keyframes panTitle{0%,25%{transform:translateY(0)}75%,100%{transform:translateY(var(--overflow-diff))}}
 @keyframes panDesc{0%,15%{transform:translateY(0)}85%,100%{transform:translateY(var(--desc-overflow-diff))}}
 @media (max-width:768px){
