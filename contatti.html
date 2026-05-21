@@ -126,6 +126,15 @@ body, html {
     -webkit-text-fill-color: #000000 !important;
     font-family:'JetBrains Mono',monospace;overflow:hidden;width:100vw;height:100vh;overscroll-behavior:none
 }
+
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+  
 #menu-overlay {
     position:fixed;top:0;left:0;width:100vw;height:100vh;
     background-color: rgba(255,255,255,.95) !important;
@@ -182,7 +191,7 @@ a.c-value:hover {
 
 <div id="custom-cursor"></div>
 <a href="index.html" id="video-wrapper" class="shrunk" aria-label="Torna alla Home">
-<!-- Video convertito per compatibilità incrociata -->
+
 <video class="bg-video active-vid" autoplay loop muted playsinline disablePictureInPicture disableRemotePlayback>
     <source src="black_low.mp4" type='video/mp4; codecs="hvc1"'>
     <source src="black_low.webm" type="video/webm">
