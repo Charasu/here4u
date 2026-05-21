@@ -43,6 +43,14 @@ main { display: flex; justify-content: center; align-items: center; padding: 15v
 .legal-section { margin-bottom: 30px; }
 .legal-section h2 { font-size: 1rem; margin-bottom: 10px; font-weight: 700; text-transform: uppercase; }
 
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
 @media (max-width:768px){
     #nav-menu{top:3.5%;right:8%}
     #video-wrapper{left:8%;top:1.5%}
