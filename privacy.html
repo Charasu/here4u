@@ -1,159 +1,391 @@
 <!doctype html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="color-scheme" content="only light">
-<meta name="theme-color" content="#000000">
-<title>Privacy Policy - チャラス</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg-color:#000000}
-html{scroll-behavior:smooth}
-*{cursor:none!important;box-sizing:border-box}
-body,html{margin:0;padding:0;max-width:100%;background-color:var(--bg-color);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#fff}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#000000">
+  <title>Privacy Policy - チャラス</title>
+  <link rel="canonical" href="https://charasu.github.io/here4u/privacy.html" />
 
-#custom-cursor{position:fixed;top:0;left:0;width:24px;height:24px;background-color:#fff;mix-blend-mode:difference;pointer-events:none;z-index:2147483647;animation:cursorMorph 1.2s infinite}
-@media (pointer:coarse){#custom-cursor{display:none!important}*{cursor:auto!important}}
-@keyframes cursorMorph{0%,30%{clip-path:circle(50% at 50% 50%)}33%,63%{clip-path:polygon(0% 0%,100% 0%,100% 100%,0% 100%)}66%,96%{clip-path:polygon(50% 0%,0% 100%,100% 100%)}100%{clip-path:circle(50% at 50% 50%)}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-#video-wrapper{position:fixed;top:1.5%;left:2%;width:55px;height:55px;z-index:2147483641;display:flex;justify-content:center;align-items:center;text-decoration:none}
-.bg-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;pointer-events:none;opacity:0;transition:opacity .3s ease}
-.bg-video.active-vid{opacity:1}
-#video-click-layer{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10}
+  <style>
+    :root {
+      --bg-color: #000000;
+    }
 
-#nav-menu{position:fixed;top:4%;right:2%;width:30px;height:20px;display:flex;flex-direction:column;justify-content:space-between;z-index:2147483646;mix-blend-mode:difference;cursor:none!important}
-#nav-menu span{display:block;height:3px;width:100%;background-color:#fff;border-radius:2px;transition:transform .4s ease,opacity .4s ease}
-#nav-menu.open span:first-child{transform:translateY(8.5px) rotate(45deg)}
-#nav-menu.open span:nth-child(2){opacity:0}
-#nav-menu.open span:nth-child(3){transform:translateY(-8.5px) rotate(-45deg)}
+    html {
+      scroll-behavior: smooth;
+    }
 
-#menu-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;background-color:rgba(0,0,0,.95)!important;z-index:2147483645;display:flex;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:opacity .5s ease}
-#menu-overlay.open{opacity:1;pointer-events:auto}
-#menu-overlay nav{display:flex;flex-direction:column;text-align:center;gap:40px}
-#menu-overlay nav a{font-family:'JetBrains Mono',monospace;color:#fff!important;-webkit-text-fill-color:#ffffff!important;text-decoration:none!important;font-size:2.5vw;font-weight:700;text-transform:uppercase;letter-spacing:2px}
-#menu-overlay nav a:hover{color:#888!important;-webkit-text-fill-color:#888888!important;transform:scale(1.05)}
+    * {
+      cursor: none !important;
+      box-sizing: border-box;
+    }
 
-main { display: flex; justify-content: center; align-items: center; padding: 15vh 0; min-height: 100vh; }
-.paper-sheet { background-color: transparent !important; background-image: linear-gradient(#fff, #fff) !important; color: #000 !important; -webkit-text-fill-color: #000000 !important; padding: 60px 45px; width: 85%; max-width: 800px; position: relative; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.7; border: 1px solid #d0d0d0 !important; }
-.lang-tag { font-weight: 700; margin-bottom: 20px; color: #000; }
-.legal-title { font-weight: 700; font-size: 1.2rem; margin-bottom: 30px; text-transform: uppercase; border-bottom: 1px solid #000; padding-bottom: 10px; }
-.legal-section { margin-bottom: 30px; }
-.legal-section h2 { font-size: 1rem; margin-bottom: 10px; font-weight: 700; text-transform: uppercase; }
+    body, html {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      background-color: var(--bg-color);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #fff;
+    }
 
-video::-webkit-media-controls-start-playback-button {
-    display: none !important;
-}
+    /* Cursore personalizzato */
+    #custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-color: #fff;
+      mix-blend-mode: difference;
+      pointer-events: none;
+      z-index: 2147483647;
+      animation: cursorMorph 1.2s infinite;
+    }
 
-video::-webkit-media-controls {
-    display: none !important;
-}
+    @media (pointer: coarse) {
+      #custom-cursor {
+        display: none !important;
+      }
+      * {
+        cursor: auto !important;
+      }
+    }
 
-@media (max-width:768px){
-    #nav-menu{top:3.5%;right:8%}
-    #video-wrapper{left:8%;top:1.5%}
-    #menu-overlay nav a{font-size:8vw!important}
-    .paper-sheet { padding: 40px 25px; width: 90%; }
-}
-</style>
+    @keyframes cursorMorph {
+      0%, 30% {
+        clip-path: circle(50% at 50% 50%);
+      }
+      33%, 63% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
+      66%, 96% {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      }
+      100% {
+        clip-path: circle(50% at 50% 50%);
+      }
+    }
+
+    /* Logo / video in alto a sinistra */
+    #video-wrapper {
+      position: fixed;
+      top: 1.5%;
+      left: 2%;
+      width: 55px;
+      height: 55px;
+      z-index: 2147483641;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .bg-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+
+    .bg-video.active-vid {
+      opacity: 1;
+    }
+
+    #video-click-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+
+    /* Menu di navigazione (hamburger) */
+    #nav-menu {
+      position: fixed;
+      top: 4%;
+      right: 2%;
+      width: 30px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 2147483646;
+      mix-blend-mode: difference;
+      cursor: none !important;
+    }
+
+    #nav-menu span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 2px;
+      transition: transform .4s ease, opacity .4s ease;
+    }
+
+    #nav-menu.open span:first-child {
+      transform: translateY(8.5px) rotate(45deg);
+    }
+
+    #nav-menu.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    #nav-menu.open span:nth-child(3) {
+      transform: translateY(-8.5px) rotate(-45deg);
+    }
+
+    /* Overlay menu a schermo intero */
+    #menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, .95) !important;
+      z-index: 2147483645;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .5s ease;
+    }
+
+    #menu-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #menu-overlay nav {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+
+    #menu-overlay nav a {
+      font-family: 'JetBrains Mono', monospace;
+      color: #fff !important;
+      -webkit-text-fill-color: #ffffff !important;
+      text-decoration: none !important;
+      font-size: 2.5vw;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    #menu-overlay nav a:hover {
+      color: #888 !important;
+      -webkit-text-fill-color: #888888 !important;
+      transform: scale(1.05);
+    }
+
+    /* Contenuto principale - foglio privacy */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15vh 0;
+      min-height: 100vh;
+    }
+
+    .paper-sheet {
+      background-color: transparent !important;
+      background-image: linear-gradient(#fff, #fff) !important;
+      color: #000 !important;
+      -webkit-text-fill-color: #000000 !important;
+      padding: 60px 45px;
+      width: 85%;
+      max-width: 800px;
+      position: relative;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      line-height: 1.7;
+      border: 1px solid #d0d0d0 !important;
+    }
+
+    .lang-tag {
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .legal-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #000;
+      padding-bottom: 10px;
+    }
+
+    .legal-section {
+      margin-bottom: 30px;
+    }
+
+    .legal-section h2 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    video::-webkit-media-controls-start-playback-button {
+      display: none !important;
+    }
+
+    video::-webkit-media-controls {
+      display: none !important;
+    }
+
+    @media (max-width: 768px) {
+      #nav-menu {
+        top: 3.5%;
+        right: 8%;
+      }
+      #video-wrapper {
+        left: 8%;
+        top: 1.5%;
+      }
+      #menu-overlay nav a {
+        font-size: 8vw !important;
+      }
+      .paper-sheet {
+        padding: 40px 25px;
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-<div id="custom-cursor"></div>
 
-<a href="index.html" id="video-wrapper">
+  <div id="custom-cursor"></div>
+
+  <a href="index.html" id="video-wrapper">
     <video class="bg-video active-vid" id="vid-white" autoplay loop muted playsinline>
-        <source src="white_low.mp4" type='video/mp4; codecs="hvc1"'>
-        <source src="white_low.webm" type="video/webm">
+      <source src="white_low.mp4" type='video/mp4; codecs="hvc1"'>
+      <source src="white_low.webm" type="video/webm">
     </video>
     <video class="bg-video" id="vid-black" autoplay loop muted playsinline>
-        <source src="black_low.mp4" type='video/mp4; codecs="hvc1"'>
-        <source src="black_low.webm" type="video/webm">
+      <source src="black_low.mp4" type='video/mp4; codecs="hvc1"'>
+      <source src="black_low.webm" type="video/webm">
     </video>
     <div id="video-click-layer"></div>
-</a>
+  </a>
 
-<div id="nav-menu">
+  <div id="nav-menu">
     <span></span><span></span><span></span>
-</div>
-<div id="menu-overlay">
+  </div>
+
+  <div id="menu-overlay">
     <nav>
-        <a href="index.html">Spazio</a>
-        <a href="about.html">Anima</a>
-        <a href="collaborazioni.html">Collaborazioni</a>
-        <a href="artisti.html">Artisti</a>
-        <a href="contatti.html">Contatti</a>
+      <a href="index.html">Spazio</a>
+      <a href="about.html">Anima</a>
+      <a href="collaborazioni.html">Collaborazioni</a>
+      <a href="artisti.html">Artisti</a>
+      <a href="contatti.html">Contatti</a>
     </nav>
-</div>
+  </div>
 
-<main>
+  <main>
     <div class="paper-sheet" id="privacy-content">
-        <div class="lang-tag">[DOC : POLICY]</div>
-        <div class="legal-title">Privacy & Cookie Policy</div>
-        
-        <div class="legal-section">
-            <h2>1. Titolare del Trattamento</h2>
-            <p>Il Titolare del trattamento dei dati è Anna Chiara Borriello. Per qualsiasi comunicazione o richiesta in merito alla presente policy, è possibile contattare l'indirizzo email: [INSERIRE EMAIL DI CONTATTO].</p>
-        </div>
+      <div class="lang-tag">[DOC : POLICY]</div>
+      <div class="legal-title">Privacy & Cookie Policy</div>
 
-        <div class="legal-section">
-            <h2>2. Finalità dello Spazio Charasu</h2>
-            <p>Questo ambiente digitale è concepito come uno spazio espositivo e narrativo. Non insegue metriche, non profila gli utenti e non utilizza strumenti di marketing o di analisi comportamentale di terze parti.</p>
-        </div>
+      <div class="legal-section">
+        <h2>1. Titolare del Trattamento</h2>
+        <p>Il Titolare del trattamento dei dati è Anna Chiara Borriello. Per qualsiasi comunicazione o richiesta in merito alla presente 
+            policy, è possibile contattare l'indirizzo email: [INSERIRE EMAIL DI CONTATTO].</p>
+      </div>
 
-        <div class="legal-section">
-            <h2>3. Tipologia di Dati Trattati (Cookie)</h2>
-            <p>Il sito utilizza esclusivamente <strong>cookie tecnici e dati di archiviazione locale (Local Storage)</strong>. Questi strumenti sono strettamente necessari per il corretto funzionamento dell'interfaccia e per garantire la continuità dell'esperienza visiva.</p>
-            <p>Nello specifico, l'unico dato salvato localmente sul browser dell'utente (tramite la chiave <i>'charasu_cookies_accepted'</i>) serve esclusivamente a ricordare la presa visione del banner informativo, evitando che questo venga mostrato ripetutamente a ogni visita.</p>
-            <p><strong>Nessun cookie analitico (es. Google Analytics), di profilazione o di terze parti è presente su questo sito.</strong> Essendo i cookie in uso puramente tecnici, la normativa vigente (GDPR) non ne richiede il consenso preventivo, ma unicamente l'informativa.</p>
-        </div>
+      <div class="legal-section">
+        <h2>2. Finalità dello Spazio Charasu</h2>
+        <p>Questo ambiente digitale è concepito come uno spazio espositivo e narrativo. Non insegue metriche, non profila gli utenti e 
+            non utilizza strumenti di marketing o di analisi comportamentale di terze parti.</p>
+      </div>
 
-        <div class="legal-section">
-            <h2>4. Diritti dell'Utente</h2>
-            <p>In conformità con gli artt. 15-22 del GDPR, l'utente ha il diritto di chiedere l'accesso, la rettifica, la cancellazione dei dati o la limitazione del trattamento. Data la natura esclusivamente tecnica dei dati raccolti (non riconducibili in alcun modo a identità personali), l'utente può cancellare autonomamente il salvataggio delle proprie preferenze svuotando la cache e i dati del proprio browser.</p>
-        </div>
+      <div class="legal-section">
+        <h2>3. Tipologia di Dati Trattati (Cookie)</h2>
+        <p>Il sito utilizza esclusivamente <strong>cookie tecnici e dati di archiviazione locale (Local Storage)</strong>. 
+            Questi strumenti sono strettamente necessari per il corretto funzionamento dell'interfaccia e per garantire la continuità 
+            dell'esperienza visiva.</p>
+        <p>Nello specifico, l'unico dato salvato localmente sul browser dell'utente (tramite la chiave <i>'charasu_cookies_accepted'</i>) 
+            serve esclusivamente a ricordare la presa visione del banner informativo, evitando che questo venga mostrato ripetutamente 
+            a ogni visita.</p>
+        <p><strong>Nessun cookie analitico (es. Google Analytics), di profilazione o di terze parti è presente su questo sito.</strong> 
+            Essendo i cookie in uso puramente tecnici, la normativa vigente (GDPR) non ne richiede il consenso preventivo, 
+            ma unicamente l'informativa.</p>
+      </div>
 
-        <div class="legal-section" style="margin-top: 50px; font-size: 0.75rem; color: #666;">
-            <p>Ultimo aggiornamento: Maggio 2026</p>
-        </div>
+      <div class="legal-section">
+        <h2>4. Diritti dell'Utente</h2>
+        <p>In conformità con gli artt. 15-22 del GDPR, l'utente ha il diritto di chiedere l'accesso, la rettifica, la cancellazione 
+            dei dati o la limitazione del trattamento. Data la natura esclusivamente tecnica dei dati raccolti (non riconducibili 
+            in alcun modo a identità personali), l'utente può cancellare autonomamente il salvataggio delle proprie preferenze svuotando 
+            la cache e i dati del proprio browser.</p>
+      </div>
+
+      <div class="legal-section" style="margin-top: 50px; font-size: 0.75rem; color: #666;">
+        <p>Ultimo aggiornamento: Maggio 2026</p>
+      </div>
     </div>
-</main>
+  </main>
 
-<script>
+  <script>
     const customCursor = document.getElementById("custom-cursor");
-    window.addEventListener("mousemove", (e => { customCursor.style.transform = `translate(${e.clientX-12}px, ${e.clientY-12}px)` }));
-    
-    const navMenu = document.getElementById("nav-menu"), menuOverlay = document.getElementById("menu-overlay");
-    navMenu.addEventListener("click", (() => { navMenu.classList.toggle("open"); menuOverlay.classList.toggle("open"); }));
+    window.addEventListener("mousemove", (e => {
+      customCursor.style.transform = `translate(${e.clientX - 12}px, ${e.clientY - 12}px)`;
+    }));
+
+    const navMenu = document.getElementById("nav-menu");
+    const menuOverlay = document.getElementById("menu-overlay");
+    navMenu.addEventListener("click", (() => {
+      navMenu.classList.toggle("open");
+      menuOverlay.classList.toggle("open");
+    }));
 
     function updateLogoColor() {
-        const wrapper = document.getElementById("video-wrapper");
-        const sheet = document.getElementById("privacy-content");
-        if (!wrapper || !sheet) return;
-        
-        const rect = sheet.getBoundingClientRect();
-        const logoRect = wrapper.getBoundingClientRect();
-        const logoCenter = logoRect.top + (logoRect.height / 2);
+      const wrapper = document.getElementById("video-wrapper");
+      const sheet = document.getElementById("privacy-content");
+      if (!wrapper || !sheet) return;
 
-        const isOverSheet = (logoCenter >= rect.top && logoCenter <= rect.bottom);
-        
-        const vidWhite = document.getElementById("vid-white");
-        const vidBlack = document.getElementById("vid-black");
-        
-        if (isOverSheet) {
-            vidWhite.classList.remove("active-vid");
-            vidBlack.classList.add("active-vid");
-        } else {
-            vidBlack.classList.remove("active-vid");
-            vidWhite.classList.add("active-vid");
-        }
+      const rect = sheet.getBoundingClientRect();
+      const logoRect = wrapper.getBoundingClientRect();
+      const logoCenter = logoRect.top + (logoRect.height / 2);
+
+      const isOverSheet = (logoCenter >= rect.top && logoCenter <= rect.bottom);
+
+      const vidWhite = document.getElementById("vid-white");
+      const vidBlack = document.getElementById("vid-black");
+
+      if (isOverSheet) {
+        vidWhite.classList.remove("active-vid");
+        vidBlack.classList.add("active-vid");
+      } else {
+        vidBlack.classList.remove("active-vid");
+        vidWhite.classList.add("active-vid");
+      }
     }
-    
-    window.addEventListener("scroll", updateLogoColor, {passive: true});
-    window.addEventListener("resize", updateLogoColor, {passive: true});
+
+    window.addEventListener("scroll", updateLogoColor, { passive: true });
+    window.addEventListener("resize", updateLogoColor, { passive: true });
     // Esegui la funzione all'avvio per settare il colore giusto subito
     updateLogoColor();
-</script>
+  </script>
+
 </body>
 </html>
